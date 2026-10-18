@@ -1,0 +1,35 @@
+Package: PaCMAPvsPhate
+Type: Package
+Title: Wrapper for PaCMAP and Phate Functions for flow cytometry 
+Version: 0.99.1
+Authors@R: 
+    person("David", "Rach", , "drach@som.umaryland.edu", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-2235-5585"))
+Description:
+  Runs basilisk/reticulate to allow PaCMAP and PHATE to be run and added into .fcs files,
+  meant to be used in conjunction with the Luciernaga package. 
+License: AGPL (>= 3)
+Encoding: UTF-8
+LazyData: FALSE
+URL: https://davidrach.github.io/PaCMAPvsPhate/
+BugReports: https://github.com/DavidRach/PaCMAPvsPhate/issues
+Imports: 
+    Biobase,
+    Biobase, 
+    Luciernaga,
+    basilisk,
+    dplyr,
+    flowCore,
+    flowWorkspace,
+    magrittr,
+    reticulate,
+    tidyselect
+Depends: R (>= 4.5.0)
+Suggests: 
+    testthat (>= 3.0.0),
+    withr
+biocViews: FlowCytometry, Preprocessing, Software, QualityControl
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+StagedInstall: no
+Config/roxygen2/version: 8.1.1
